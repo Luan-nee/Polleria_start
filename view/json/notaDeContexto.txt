@@ -1,0 +1,17 @@
+Estos archivos json solo son para indicar
+los datos que necesita el fron-end
+para generar los apartados al cual 
+el usuario va acceder.
+
+Cada archivo json tendrá el nombre
+del apartado en donde se necesitan esos datos,
+por ejemplo:
+
+El archivo pagina_principal.json
+tendrá los datos que se necesitan en el
+apartado pagina_principal.php.
+
+Estos datos será obtenidos de la base de datos,
+por lo tanto la base de datos tendrá que 
+facilitar funciones los cuales me retornen
+los datos que serán visibles en el archivo.json

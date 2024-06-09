@@ -1,0 +1,13 @@
+
+{
+  "platos_de_comida":{
+    "id": 1,
+    "nombre_del_producto": "dato",
+    "imagen_del_producto": "image-producto.jpg",
+    "precio_del_producto": 999.20
+  },
+  "categorias":{
+    "nombre": "nombre-categoria",
+    "imagen": "imagen-del-categoria.jpg"
+  }
+}
