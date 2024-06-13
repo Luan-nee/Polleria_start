@@ -1,0 +1,77 @@
+.login{
+  background-image: url("../img/login-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE LOGIN-LOGO
+-------------------------------------------------- */
+.login-logo{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-logo img{
+  width: 200px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.login-logo p{
+  color: white;
+  font-weight:bold;
+  font-size: 40px;
+  text-shadow: 4px 4px 0px black;
+}
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE LOGIN-CREDENCIALES
+-------------------------------------------------- */
+.login-credenciales{
+  background-color: white;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.login-credenciales input{
+  outline: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-style: none;
+}
+.login-credenciales input[type="password"]{
+  background-color: rgb(199, 199, 199);
+}
+.login-credenciales div{
+  display: flex;
+  justify-content: space-between;
+}
+.login-credenciales a{
+  color: rgb(0, 132, 255);
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.login-credenciales button{
+  color: white;
+  background-color: var(--color1);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-style: none;
+  border-radius: 20px;
+}

@@ -1,0 +1,72 @@
+.productos{
+  display: flex;
+  flex-direction: column;
+  border: 1px white solid;
+}
+
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE HEADER
+-------------------------------------------------- */
+.productos-cabecera{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.productos-cabecera img{
+  object-fit: cover;
+  width: 50px;
+  aspect-ratio: 1/1;
+  filter:invert(1);
+}
+.productos-cabecera p{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE HEADER
+-------------------------------------------------- */
+.productos-buscador{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+}
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE HEADER
+-------------------------------------------------- */
+.productos-ofertas{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  overflow: hidden;
+
+  height: 250px;
+}
+
+.productos-ofertas img{
+  object-fit: cover;
+  width: 100%;
+}
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE PRODUCTOS-CONTEINER-CATEGORIAS
+-------------------------------------------------- */
+.productos-conteiner-categorias{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 5px;
+}
+
+/* --------------------------------------------------
+ELEMENTOS DENTRO DE PRODUCTOS-CONTEINER-FAVORITOS
+-------------------------------------------------- */
+.productos-conteiner-favoritos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}

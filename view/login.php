@@ -1,36 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<?php include("view/layout/header.php") ?>
+  <title>LOGIN</title>  
+  <link rel="stylesheet" href="view/css/main.css">
+  <link rel="stylesheet" href="view/css/login.css">
 </head>
-
 <body>
-  <h1>login</h1>
-  <p>apartado para iniciar sesion con la cuenta que ya tienes creado</p>
-  <br>
-  <hr>
-  <label for="email-login">
-    <p>correo electrónico:</p>
-    <input type="email" name="email-login" id="input-email-login">
-  </label>
-  <label for="password-login">
-    <p>contraseña:</p>
-    <input type="password" name="password-login" id="input-password-login">
-  </label>
-  <button>Login</button>
-</body>
+  <section class="login dispositivo-Movil">
+    <div class="login-logo">
+      <img src="view/icon/logoPollo.png" alt="fondo del login">
+      <p>Polleria Start</p>
+    </div>
 
-<style>
-  *{
-    padding: 0px;
-    margin: 0px;
-  }
-  body{
-    display:flex;
-    flex-direction: column;
-    padding: 0px 400px;
-  }
-</style>
+    <form class="login-credenciales" action="index.php" method="post">
+      <input 
+        type="text" 
+        name="login-email-user" 
+        placeholder="Email"
+        value="user@gmail.com"
+      >
+      <input 
+        type="password" 
+        name="login-password-user" 
+        placeholder="Password"
+        value="12345678"
+      >
+      <div>
+        <a href="#NoRecordar">remember</a>
+        <a href="#RecuperarPassword">forget password</a>
+      </div>
+      <button name="btn" value="login" type="submit">login</button>
+      <p>
+        No tienen una Cuenta? <a href="index.php?opcion=registro">Crear una cuenta</a>
+      </p>
+    </form>
+  </section>
+</body>
 </html>
