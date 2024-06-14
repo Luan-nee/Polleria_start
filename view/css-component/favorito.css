@@ -2,33 +2,30 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 3px;
 }
 .favorito p{
   color: black;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
-  text-align: center;
 }
 
 .foto-producto{
-  display: flex;
-  justify-self: center;
-  align-items: center;
   position: relative;
-
-  height: 150px;
+  
 }
 
-.foto-producto img{
+.imagen-producto{
   object-fit: cover;
   height: 100%;
-  aspect-ratio: 1/1;
 }
 
 .corazon{
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
 
   position: absolute;
@@ -45,5 +42,4 @@
 .corazon img{
   object-fit: cover;
   width: 100%;
-  aspect-ratio: 1/1;
 }

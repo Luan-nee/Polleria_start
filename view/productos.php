@@ -33,8 +33,6 @@ include("view/layout/header.php");
     <section class="productos-conteiner-favoritos">
       <?php 
         favorito('view/img/plato-de-comida.png', "pollito a la brasa");
-        favorito('view/img/plato-de-comida.png', "pollito a la brasa");
-        favorito('view/img/plato-de-comida.png', "pollito a la brasa");
       ?>
     </section>
   </section>

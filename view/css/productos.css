@@ -1,7 +1,10 @@
 .productos{
+  background-color: var(--color2);
   display: flex;
   flex-direction: column;
   border: 1px white solid;
+  padding: 20px;
+  gap: 15px;
 }
 
 /* --------------------------------------------------
@@ -32,6 +35,7 @@ ELEMENTOS DENTRO DE HEADER
   width: 100%;
   padding: 10px 20px;
   border-radius: 10px;
+  border-style: none;
   font-size: 18px;
   outline: none;
 }
@@ -68,5 +72,5 @@ ELEMENTOS DENTRO DE PRODUCTOS-CONTEINER-FAVORITOS
 .productos-conteiner-favoritos{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 20px;
+  gap: 10px;
 }
