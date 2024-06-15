@@ -15,6 +15,9 @@
         static function productos(){
             require_once("./view/productos.php");
         }
+        static function carrito(){
+            require_once("./view/carrito.php");
+        }
         /*
         static function login(){
             require_once("./view/login.php");

@@ -2,7 +2,7 @@
 require_once("view/layout/categoria-component.php");
 require_once("view/layout/favorito-component.php");
 
-include("view/layout/header.php");
+include_once("view/layout/header.php");
 ?>
   <title>PRODUCTOS</title>  
   <link rel="stylesheet" href="view/css/main.css">
@@ -15,7 +15,9 @@ include("view/layout/header.php");
     <header class="productos-cabecera">
       <img src="view/icon/menu.png" alt="">
       <p>Polleria Start</p>
-      <img src="view/icon/carrito.png" alt="">
+      <a href="index.php?opcion=">
+        <img src="view/icon/carrito.png" alt="">
+      </a>
     </header>
     <input class="productos-buscador" type="search" placeholder="buscar">
     <div class="productos-ofertas">
@@ -32,7 +34,14 @@ include("view/layout/header.php");
     </section>
     <section class="productos-conteiner-favoritos">
       <?php 
-        favorito('view/img/plato-de-comida.png', "pollito a la brasa");
+        favorito('view/img/plato-de-comida.png', "Pollito a la brasa");
+        favorito('view/img/plato-de-comida.png', "Pollipapa");
+        favorito('view/img/plato-de-comida.png', "1/4 de Pollo");
+        favorito('view/img/plato-de-comida.png', "Alitas Picantes");
+        favorito('view/img/plato-de-comida.png', "Pollito a la brasa");
+        favorito('view/img/plato-de-comida.png', "Pollipapa");
+        favorito('view/img/plato-de-comida.png', "1/4 de Pollo");
+        favorito('view/img/plato-de-comida.png', "Alitas Picantes");
       ?>
     </section>
   </section>

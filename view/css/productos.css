@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   border: 1px white solid;
+  box-sizing: border-box;
   padding: 20px;
   gap: 15px;
 }
@@ -71,6 +72,6 @@ ELEMENTOS DENTRO DE PRODUCTOS-CONTEINER-FAVORITOS
 -------------------------------------------------- */
 .productos-conteiner-favoritos{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
   gap: 10px;
 }

@@ -4,42 +4,46 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 5px;
   padding: 3px;
+  border-radius: 5px;
+
+  position: relative;
 }
 .favorito p{
   color: black;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
 }
 
-.foto-producto{
-  position: relative;
-  
-}
-
-.imagen-producto{
-  object-fit: cover;
-  height: 100%;
-}
-
 .corazon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: -15px;
-  right: -15px;
-
   background-color: red;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   padding: 5px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .corazon img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.foto-producto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.foto-producto img{
   object-fit: cover;
   width: 100%;
 }
