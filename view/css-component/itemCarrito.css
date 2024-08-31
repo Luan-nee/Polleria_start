@@ -1,0 +1,63 @@
+/* --------------------------------------------------
+              CONTENEDOR GENERAL
+-------------------------------------------------- */
+
+.item_carrito{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F5F5;
+  box-shadow: 5px 5px 5px 0px rgb(204, 204, 204);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* --------------------------------------------------
+              SEPARANDO CON GRID
+-------------------------------------------------- */
+
+.item_carrito div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom:5px;
+}
+
+.item_carrito div:nth-child(3){
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* --------------------------------------------------
+          ESTILOS INFO DEL CARRITO
+-------------------------------------------------- */
+.item_carrito div:nth-child(1) h4{
+  font-size: 1.2em;
+}
+
+.item_carrito div:nth-child(1) p{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #FF8617;
+}
+
+.item_carrito div:nth-child(2) p{
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+.item_carrito div:nth-child(3) p{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FF8617;
+}

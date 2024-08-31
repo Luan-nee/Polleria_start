@@ -1,0 +1,77 @@
+/* --------------------------------------------------
+              ESTILOS GENERALES
+-------------------------------------------------- */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------------------------
+                    CONTENEDOR GENERICO
+-------------------------------------------------- */
+.centrar-contenido{
+  max-width: 500px;
+}
+/* --------------------------------------------------
+                    HEADER CARRITO 
+-------------------------------------------------- */
+
+.header-carrito{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500; 
+  font-size: 1.5em; 
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------
+              CONTENEDOR DEL CARRITO
+-------------------------------------------------- */
+.conteiner-itemsCarrito{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* --------------------------------------------------
+                  OPCIONES
+-------------------------------------------------- */
+
+.opciones{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.opciones a{
+  margin-top: 20px;
+  padding: 10px;
+  border-style: none;
+  box-shadow: 5px 5px 5px 0px rgb(204, 204, 204);
+  font-size: 1.05em;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opciones a:nth-child(1){
+  background-color: #F5F5F5;
+  color: gray;
+  font-weight: 500;
+}
+
+.opciones a:nth-child(2){
+  background-color:#FF8617;;
+  color: white;
+  font-weight: bold;
+}

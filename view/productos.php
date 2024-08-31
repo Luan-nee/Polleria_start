@@ -15,7 +15,7 @@ include_once("view/layout/header.php");
     <header class="productos-cabecera">
       <img src="view/icon/menu.png" alt="">
       <p>Polleria Start</p>
-      <a href="index.php?opcion=">
+      <a href="index.php?opcion=carrito">
         <img src="view/icon/carrito.png" alt="">
       </a>
     </header>
