@@ -49,6 +49,13 @@
           100.20,
           0
         ); 
+        itemCarrito(
+          '1/4 DE POLLO',
+          1,
+          'Plato ahora estoy agregando texto por demás, espero no te molestes :X de pollo a la brasa que contienen papa fritas, ensalada, refresco y mayonesa',
+          100.20,
+          0
+        ); 
       ?>
     </section>
   

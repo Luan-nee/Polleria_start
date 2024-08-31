@@ -30,10 +30,22 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500; 
   font-size: 1.5em; 
-  margin-bottom: 30px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  background-color: white;
+  position:sticky;
+  top: 0px;
+  box-shadow: 0px 5px 20px rgb(226, 226, 226);
 }
 
+.header-carrito p:nth-child(2){
+  text-align: end;
+}
+
+.header-carrito p:nth-child(2) span{
+  font-weight: bold;
+}
 /* --------------------------------------------------
               CONTENEDOR DEL CARRITO
 -------------------------------------------------- */
@@ -41,6 +53,8 @@ body{
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  padding: 0px 10px;
 }
 
 /* --------------------------------------------------
@@ -52,6 +66,9 @@ body{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-bottom: 20px;
+
+  padding: 0px 10px;
 }
 
 .opciones a{
