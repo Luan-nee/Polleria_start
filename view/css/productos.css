@@ -5,6 +5,7 @@ a{
 body{
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .CONTENEDOR-GENERAL{
@@ -20,6 +21,17 @@ body{
   flex-direction: row;
   justify-content: space-between;
 }
+.conteiner-img-user{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-img-user img{
+  height: 100%;
+  object-fit: cover;
+}
 
 .header nav{
   display: flex;
@@ -29,12 +41,12 @@ body{
 
 .header nav a{
   padding: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .conteiner-user-perfil{
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -52,12 +64,17 @@ body{
 -------------------------------------------------- */
 .conteiner-carrusel{
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 .header-carrusel{
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   padding: 0px 10px;
+}
+.header-carrusel p{
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .indicador-carrusel button{
   border-radius: 0px;
@@ -77,10 +94,26 @@ body{
   flex-direction: row;
   width: 100%;
   overflow: auto;
+  margin-top: 30px;
 }
 .conteiner-categorias a{
   padding: 10px;
   text-wrap: nowrap;
+}
+
+/* --------------------------------------------------
+          ESTILO DE ACTIVACIÓN
+-------------------------------------------------- */
+
+.conteiner-producto{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding-top: 10px;
+
+  border-color: #FF7A00;
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
 }
 
 /* --------------------------------------------------
@@ -93,4 +126,13 @@ body{
 .activo-categoria{
   background-color: #FF7A00;
   color: white;
+}
+
+/* --------------------------------------------------
+          MEDIA KUERIES
+-------------------------------------------------- */
+@media (width < 660px){
+  .conteiner-producto{
+    grid-template-columns: 1fr 1fr;
+  }
 }

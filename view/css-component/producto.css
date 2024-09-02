@@ -1,0 +1,59 @@
+
+/* --------------------------------------------------
+                ESTILOS GENERAL DEL PRODUCTO
+-------------------------------------------------- */
+
+.item-producto{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #F5F5F5;
+  box-shadow: 5px 5px 5px 0px rgb(204, 204, 204);
+}
+
+
+/* --------------------------------------------------
+                IMG DEL PRODUCTO
+-------------------------------------------------- */
+.item-producto div:nth-child(1){
+  width: 100%;
+  overflow: hidden;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-producto div:nth-child(1) img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------
+            INFORMACION DEL PRODUCTO
+-------------------------------------------------- */
+.item-producto div:nth-child(2){
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+
+.item-producto div:nth-child(2) h3{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 1em;
+}
+
+.item-producto div:nth-child(2) p{
+  font-size: 1.1em;
+}
+
+.item-producto div:nth-child(2) button{
+  padding: 5px;
+  color: white;
+  background-color: #FF7A00;
+  font-weight: bold;
+  border-style: none;
+  font-size: 0.9em;
+}
