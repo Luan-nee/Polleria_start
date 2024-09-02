@@ -22,6 +22,7 @@ include_once("view/layout/header.php");
     <nav>
       <a href="#" class="activo-nav">INICIO</a>
       <a href="#">COMPRAS</a>
+      <a href="index.php?opcion=carrito">CARRITO</a>
       <div class="conteiner-user-perfil">
         <img src="./view/img/perfil-user.jpg" alt="imagen del usuario">
       </div>
