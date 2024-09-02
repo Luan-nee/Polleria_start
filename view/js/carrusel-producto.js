@@ -15,7 +15,6 @@ new Glider(document.querySelector('.glider'), {
       // screens greater than >= 420px
       breakpoint: 420,
       settings: {
-        // Set to `auto` and provide item width to adjust to viewport
         slidesToShow: 2,
         slidesToScroll: 1,
         itemWidth: 150,
